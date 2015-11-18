@@ -1,0 +1,40 @@
+{
+  "name": "jquery-findInnermost",
+  "version": "0.1.0",
+  "description": "jquery-findInnermost",
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "author": "baldwicc <c1.baldwin@qut.edu.au> (https://github.com/baldwicc)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baldwicc/jquery-findInnermost.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "grunt"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-qunit": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "jshint-stylish": "*",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/baldwicc/jquery-findInnermost/issues"
+  },
+  "homepage": "https://github.com/baldwicc/jquery-findInnermost#readme",
+  "main": "dist/jquery-findInnermost.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
+}
+

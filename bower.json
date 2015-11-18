@@ -1,0 +1,35 @@
+{
+  "name": "jquery-findInnermost",
+  "version": "0.1.2",
+  "dependencies": {
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "qunit": "*",
+    "jquery": "*"
+  },
+  "homepage": "https://github.com/baldwicc/jquery-findInnermost",
+  "authors": [
+    "Christopher Baldwin <c1.baldwin@qut.edu.au>"
+  ],
+  "description": "like $.find, but $.findInnermost",
+  "main": "dist/jquery-findInnermost.min.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "jquery-plugin",
+    "find",
+    "findInnermost",
+    "find-all"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
+
