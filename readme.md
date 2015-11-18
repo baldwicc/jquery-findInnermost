@@ -1,35 +1,39 @@
-# jquery-findall [![Build Status](https://travis-ci.org/baldwicc/jquery-findall.svg?branch=master)](https://travis-ci.org/baldwicc/jquery-findall)
+# jquery-findInnermost [![Build Status](https://travis-ci.org/baldwicc/jquery-findInnermost.svg?branch=master)](https://travis-ci.org/baldwicc/jquery-findInnermost)
 
-> like $.find, but $.findAll
+> like $.find, but $.findInnermost
 
 ## Installation
 ```shell
-bower install jquery-findall --save
+bower install jquery-findInnermost --save
 ```
 
 ## Usage
 ```javascript
 var data = [
-  '<div id="element">',
-  '  <p id="child">',
-  '    wheeee!'
-  '  </p>',
-  '</div>'
+'      <div id="parent">',
+'        <div class="child child-1">',
+'          <div class="child child-2">',
+'            whoaa!',
+'          </div>',
+'          <div class="child child-3">',
+'            <div class="child child-4">',
+'              whee!',
+'            </div>',
+'          </div>',
+'        </div>',
+'      </div>',
 ].join('\n');
 
-// will return an empty collection 😦
-$(data).find('#element');
+// will return 4 elems 😦
+$(data).find('.child');
 
-// will return #element 😄
-$(data).findAll('#element');
+// will return 2 elems - child-2 and child-4 😄
+$(data).findInnermost('.child');
 
 // and of course, it works in the dom
 $('body').append(data);
-$('#element').findAll('#element');
+$('#element').findInnermost('.child');
 ```
-
-## Why?
-Because nothing [on](http://stackoverflow.com/questions/3637298) [stackoverflow](http://stackoverflow.com/questions/17535631) [was available](https://github.com/ronen/jquery.findIncludeSelf) as an AMD-friendly plugin.
 
 ## License
 
